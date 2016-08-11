@@ -1,0 +1,14 @@
+#about-wrapper {
+  margin: 0 15px;
+  h2 {
+    color: $main;
+  }
+  #image {
+    background: url('assets/images/Profile.jpeg');
+    height: 350px;
+    width: 320px;
+    background-size: cover;
+    float: left;
+    margin-right: 10px;
+  }
+}
