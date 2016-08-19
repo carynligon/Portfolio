@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = React.createClass({
+export default React.createClass({
   render: function() {
     return (
       <header>
@@ -9,5 +9,3 @@ const Header = React.createClass({
     )
   }
 });
-
-export default Header;

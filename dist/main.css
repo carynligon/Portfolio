@@ -5,27 +5,56 @@ nav {
     text-decoration: none;
     margin-right: 10px; }
     nav a:hover {
-      color: #e1bd0c; }
+      color: #ffbe00; }
 
 h1 {
   margin: 0;
   padding: 150px;
   text-align: center;
-  background: #e1bd0c;
+  background: #ffbe00;
   color: #fff;
   font-size: 3rem; }
 
 #about-wrapper {
-  margin: 0 15px; }
+  margin: 5% auto;
+  width: 65%; }
   #about-wrapper h2 {
-    color: #e1bd0c; }
+    color: #413e3e;
+    display: inline-block;
+    margin: 0;
+    font-size: 3rem;
+    position: relative;
+    top: 30px;
+    left: 50px; }
   #about-wrapper #image {
     background: url("assets/images/Profile.jpeg");
     height: 350px;
-    width: 320px;
+    width: 350px;
+    border-radius: 50%;
     background-size: cover;
     float: left;
-    margin-right: 10px; }
+    margin-right: 10px;
+    opacity: 0.8; }
+  #about-wrapper #about-paragraph-wrapper {
+    background: #837777;
+    color: #fff;
+    display: inline-block;
+    width: 64%;
+    position: relative;
+    top: 40px;
+    right: 50px;
+    padding: 15px 5%;
+    box-sizing: border-box; }
+
+#recent-projects-wrapper {
+  background: #837777;
+  height: 400px;
+  margin-top: 8%;
+  padding-top: 2px; }
+  #recent-projects-wrapper h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem; }
 
 body {
   font-family: 'Karla';
