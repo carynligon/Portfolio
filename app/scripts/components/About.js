@@ -7,11 +7,12 @@ export default React.createClass({
     return (
       <main id="about-wrapper">
         <h2>And a cool website will be here soon!</h2>
+
       </main>
     );
   }
 });
-//
+
 // <div id="image" alt="image of Caryn">
 // </div>
 // <div id="about-paragraph-wrapper">

@@ -9,6 +9,7 @@ export default React.createClass({
   render() {
     return (
       <main>
+
         <Header/>
         <About/>
       </main>
