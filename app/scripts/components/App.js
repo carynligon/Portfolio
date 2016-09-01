@@ -9,11 +9,13 @@ export default React.createClass({
   render() {
     return (
       <main>
-        <Nav/>
         <Header/>
         <About/>
-        <Recent/>
       </main>
     );
   }
 });
+
+// <Nav/>
+
+// <Recent/>
