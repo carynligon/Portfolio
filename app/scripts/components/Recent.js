@@ -6,7 +6,18 @@ export default React.createClass({
       <main id="recent-projects-wrapper">
         <h2>Recent Work</h2>
         <ul id="project-preview-list">
-          <li></li>
+          <li>
+            <h3>Bartender's Choice</h3>
+            <div className="project-main-image"></div>
+          </li>
+          <li>
+            <h3>Bring the Band</h3>
+            <div className="project-main-image"></div>
+          </li>
+          <li>
+            <h3>Confirm</h3>
+            <div className="project-main-image"></div>
+          </li>
         </ul>
       </main>
     );

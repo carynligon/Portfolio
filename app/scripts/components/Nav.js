@@ -6,8 +6,8 @@ export default React.createClass({
     return (
       <nav>
         <Link to="/">Home</Link>
-        Projects
-        Contact
+        <Link to="/">Projects</Link>
+        <Link to="/">Contact</Link>
       </nav>
     );
   }

@@ -1,10 +1,16 @@
 nav {
-  padding: 10px;
+  padding: 30px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $white;
   a {
     text-decoration: none;
     margin-right: 10px;
+    padding-bottom: 3px;
     &:hover{
       color: $main;
+      border-bottom: 5px solid $secondary;
     }
   }
 }
@@ -16,4 +22,8 @@ h1 {
   background: $main;
   color: $white;
   font-size: 3rem;
+}
+
+header {
+  margin-top: 80px
 }
