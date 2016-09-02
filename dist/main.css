@@ -16,16 +16,14 @@ h1 {
   font-size: 3rem; }
 
 #about-wrapper {
-  margin: 5% auto;
+  margin: 20% auto;
   width: 65%; }
   #about-wrapper h2 {
     color: #413e3e;
     display: inline-block;
     margin: 0;
     font-size: 3rem;
-    position: relative;
-    top: 30px;
-    left: 50px; }
+    text-align: center; }
   #about-wrapper #image {
     background: url("assets/images/Profile.jpeg");
     height: 350px;

@@ -1,14 +1,12 @@
 #about-wrapper {
-  margin: 5% auto;
+  margin: 20% auto;
   width: 65%;
   h2 {
     color: $black;
     display: inline-block;
     margin: 0;
     font-size: 3rem;
-    position: relative;
-    top: 30px;
-    left: 50px;
+    text-align: center;
   }
   #image {
     background: url('assets/images/Profile.jpeg');
