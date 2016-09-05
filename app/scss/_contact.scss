@@ -12,7 +12,11 @@
     label {
       display: block;
       width: 55%;
-      margin: 0 auto;
+      font-size: 1.1rem;
+      margin-left: 118px;
+      visibility: hidden;
+      position: relative;
+      top: 29px;
     }
     input {
       display: block;
@@ -20,12 +24,33 @@
       margin: 0 auto 10px auto;
       background: none;
       border: none;
+      color: $black;
       border-bottom: 1px solid $black;
-      font-size: 1.2rem;
+      font-size: 1rem;
       padding: 5px;
       box-sizing: border-box;
       &:focus {
         outline: none;
+      }
+    }
+    #email {
+      margin-bottom: 25px;
+    }
+    input, textarea {
+      &::-webkit-input-placeholder {
+       color: $black;
+      }
+
+      &:-moz-placeholder {
+         color: $black;
+      }
+
+      &::-moz-placeholder {
+         color: $black;
+      }
+
+      &:-ms-input-placeholder {
+         color: $black;
       }
     }
     input[type=submit] {
@@ -46,9 +71,10 @@
       display: block;
       width: 55%;
       border: 1px solid $black;
-      font-size: 1.2rem;
+      color: $black;
+      font-size: 1rem;
       background: none;
-      margin: 0 auto;
+      margin: 7px auto 0 auto;
       height: 150px;
       padding: 5px;
       box-sizing: border-box;
