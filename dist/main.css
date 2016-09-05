@@ -2,6 +2,7 @@
 nav {
   padding: 30px 10px;
   position: fixed;
+  z-index: 20;
   top: 0;
   width: 100%;
   background: #fff;
@@ -26,9 +27,10 @@ header {
   margin-top: 80px; }
 
 #about-wrapper {
-  margin: 5% auto;
-  width: 900px;
-  height: 730px; }
+  width: 100%;
+  padding-top: 50px;
+  height: 810px;
+  background: #6590b1; }
   #about-wrapper h2 {
     color: #413e3e;
     margin: 0 0 20px 0;
@@ -40,41 +42,57 @@ header {
     width: 350px;
     margin: 0 auto;
     border-radius: 50%;
-    background-size: cover; }
+    background-size: cover;
+    position: relative;
+    z-index: 5; }
   #about-wrapper #about-paragraph-wrapper {
-    background: #6590b1;
-    color: #fff;
+    background: #fff;
+    color: #413e3e;
     width: 64%;
     margin: 0 auto;
     padding: 70px 5% 15px 5%;
     box-sizing: border-box;
     position: relative;
     bottom: 80px;
-    z-index: -3; }
+    z-index: 1; }
 
 #recent-projects-wrapper {
-  background: #6590b1;
-  height: 500px;
-  margin-top: 8%;
-  padding-top: 2px; }
+  height: 440px;
+  padding: 5rem 0; }
   #recent-projects-wrapper h2 {
     text-align: center;
-    color: #fff;
-    font-size: 2.5rem; }
+    color: #413e3e;
+    font-size: 2.5rem;
+    margin-top: 0; }
   #recent-projects-wrapper ul {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 70%;
+    width: 95%;
+    max-width: 1150px;
+    padding: 0;
     margin: 0 auto; }
     #recent-projects-wrapper ul li {
       width: calc(100% / 3 - 40px);
       height: 300px;
-      border: 1px solid black;
+      display: inline-block;
       box-sizing: border-box;
       margin: 20px;
-      display: flex;
       list-style-type: none; }
+      #recent-projects-wrapper ul li h3 {
+        border-bottom: 1px solid #f4efef;
+        padding-bottom: 10px;
+        text-align: center;
+        margin: 15px 0; }
+      #recent-projects-wrapper ul li p {
+        font-size: 1rem;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        border-radius: 5px; }
+    #recent-projects-wrapper ul .project-main-image {
+      height: 70%;
+      width: 100%;
+      background-size: contain;
+      background-repeat: no-repeat; }
 
 #project-preview-wrapper {
   height: 300px;
@@ -83,6 +101,43 @@ header {
   position: relative;
   bottom: 25%;
   z-index: 5; }
+
+#featured-project-section #featured-project {
+  height: 356px;
+  background-position-y: -40px;
+  width: 100%;
+  background-size: cover; }
+  #featured-project-section #featured-project::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(101, 144, 177, 0.8);
+    height: 356px;
+    width: 100%; }
+  #featured-project-section #featured-project h3 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 7rem;
+    position: relative;
+    z-index: 5; }
+  #featured-project-section #featured-project h4 {
+    font-size: 1.7rem;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    z-index: 5; }
+  #featured-project-section #featured-project p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 0; }
+    #featured-project-section #featured-project p:last-child {
+      margin: 0; }
 
 body {
   font-family: 'Karla';

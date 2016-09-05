@@ -4,6 +4,8 @@ import Nav from './Nav';
 import Header from './Header';
 import About from './About';
 import Recent from './Recent';
+import FeaturedProject from './FeaturedProject';
+import Contact from './Contact';
 
 export default React.createClass({
   render() {
@@ -11,8 +13,10 @@ export default React.createClass({
       <main>
         <Nav/>
         <Header/>
-        <About/>
+        <FeaturedProject/>
         <Recent/>
+        <About/>
+        <Contact/>
       </main>
     );
   }
