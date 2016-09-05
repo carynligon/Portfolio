@@ -5,7 +5,7 @@ export default React.createClass({
     return (
       <section id="contact-section">
         <form className="contact-form" action="mailto:hello@carynligon.com" method="post" encType="text/plain">
-          <h3>Let's talk!</h3>
+          <h2>Let's talk!</h2>
           <label htmlFor="name">Name</label>
           <input type="text" name="name" id="name" placeholder="Name"/>
           <label htmlFor="email">Email</label>

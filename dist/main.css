@@ -139,6 +139,41 @@ header {
     #featured-project-section #featured-project p:last-child {
       margin: 0; }
 
+#contact-section {
+  padding: 70px 0; }
+  #contact-section .contact-form {
+    width: 500px;
+    margin: 0 auto; }
+    #contact-section .contact-form h2 {
+      text-align: center;
+      margin: 0;
+      font-size: 2.5rem; }
+    #contact-section .contact-form label {
+      display: block;
+      width: 50%;
+      margin: 0 auto; }
+    #contact-section .contact-form input {
+      display: block;
+      width: 50%;
+      margin: 0 auto 10px auto;
+      font-size: 0.9rem;
+      padding: 5px;
+      box-sizing: border-box; }
+    #contact-section .contact-form input[type=submit], #contact-section .contact-form input[type=reset] {
+      display: inline-block;
+      width: 20%;
+      margin: 15px 5px; }
+    #contact-section .contact-form input[type=submit] {
+      margin-left: 29%; }
+    #contact-section .contact-form textarea {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+      height: 150px;
+      font-size: 0.9rem;
+      padding: 5px;
+      box-sizing: border-box; }
+
 body {
   font-family: 'Karla';
   margin: 0;
