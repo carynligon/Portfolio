@@ -143,36 +143,52 @@ header {
   padding: 70px 0; }
   #contact-section .contact-form {
     width: 500px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 30px 0; }
     #contact-section .contact-form h2 {
       text-align: center;
       margin: 0;
       font-size: 2.5rem; }
     #contact-section .contact-form label {
       display: block;
-      width: 50%;
+      width: 55%;
       margin: 0 auto; }
     #contact-section .contact-form input {
       display: block;
-      width: 50%;
+      width: 55%;
       margin: 0 auto 10px auto;
-      font-size: 0.9rem;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #413e3e;
+      font-size: 1.2rem;
       padding: 5px;
       box-sizing: border-box; }
-    #contact-section .contact-form input[type=submit], #contact-section .contact-form input[type=reset] {
-      display: inline-block;
-      width: 20%;
-      margin: 15px 5px; }
+      #contact-section .contact-form input:focus {
+        outline: none; }
     #contact-section .contact-form input[type=submit] {
-      margin-left: 29%; }
+      display: inline-block;
+      border: none;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+      width: 20%;
+      background: #ffbe00;
+      color: #fff;
+      margin: 15px 5px 15px 57%;
+      transition: transform 0.2s; }
+      #contact-section .contact-form input[type=submit]:hover, #contact-section .contact-form input[type=submit]:focus {
+        transform: scale(1.05);
+        cursor: pointer; }
     #contact-section .contact-form textarea {
       display: block;
-      width: 50%;
+      width: 55%;
+      border: 1px solid #413e3e;
+      font-size: 1.2rem;
+      background: none;
       margin: 0 auto;
       height: 150px;
-      font-size: 0.9rem;
       padding: 5px;
       box-sizing: border-box; }
+      #contact-section .contact-form textarea:hover, #contact-section .contact-form textarea:focus {
+        outline: none; }
 
 body {
   font-family: 'Karla';
