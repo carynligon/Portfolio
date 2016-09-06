@@ -20,7 +20,7 @@ nav {
 
 h1 {
   margin: 0;
-  padding: 150px;
+  padding: 150px 0;
   text-align: center;
   background: $main;
   color: $white;
@@ -29,4 +29,10 @@ h1 {
 
 header {
   margin-top: 80px
+}
+
+@media (max-width: 600px) {
+  nav {
+    text-align: center;
+  }
 }

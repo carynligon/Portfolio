@@ -1,9 +1,15 @@
 import React from 'react';
-import {Link} from 'react-router';
+import {Link, browserHistory} from 'react-router';
 
 import Nav from './Nav';
 
 export default React.createClass({
+  previousProject() {
+    browserHistory.push('/projects/Confirm');
+  },
+  nextProject() {
+    browserHistory.push('/projects/To-Do');
+  },
   render() {
     return (
       <main>
@@ -35,11 +41,11 @@ export default React.createClass({
             <p className="project-process-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <img className="secondary-process-image" src="/assets/images/Reactpardy/jService.png" alt="logo of API used, jService"/>
-          <div className="arrows-to-project">
-          <Link to="/Confirm"><i className="fa fa-arrow-left" aria-hidden="true"></i></Link>
-          <Link to="/To-Do"><i className="fa fa-arrow-right" aria-hidden="true"></i></Link>
-          </div>
         </section>
+        <div className="arrows-to-project">
+        <i className="fa fa-arrow-left" aria-hidden="true" onClick={this.previousProject}></i>
+        <i className="fa fa-arrow-right" aria-hidden="true" onClick={this.nextProject}></i>
+        </div>
       </main>
     );
   }

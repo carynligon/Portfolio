@@ -5,7 +5,7 @@ import router from './router';
 
 ReactDOM.render(router, document.getElementById('container'));
 
-var authorization = btoa('kid_ByiP3Qqs:1ed68f989f8a480caa456695fa8b51e7');
+var authorization = btoa('kid_ByiP3Qqs:47ab712f2a7b40bfaa858d97c76acf53');
 
 $(document).ajaxSend(function(evt, xhrAjax, jqueryAjax) {
     xhrAjax.setRequestHeader('Authorization', 'Basic ' + authorization);

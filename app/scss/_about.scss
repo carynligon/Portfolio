@@ -1,7 +1,6 @@
 #about-wrapper {
   width: 100%;
   padding-top: 50px;
-  height: 810px;
   background: $secondary;
   h2 {
     color: $black;
@@ -22,12 +21,28 @@
   #about-paragraph-wrapper {
     background: $white;
     color: $black;
-    width: 64%;
+    width: 70%;
+    max-width: 580px;
     margin: 0 auto;
     padding: 70px 5% 15px 5%;
     box-sizing: border-box;
     position: relative;
     bottom: 80px;
     z-index: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  #about-wrapper {
+    #about-paragraph-wrapper {
+      width: 85%;
+    }
+    #image {
+      width: 250px;
+      height: 250px;
+    }
+    h2 {
+      font-size: 2rem;
+    }
   }
 }

@@ -1,5 +1,4 @@
 #recent-projects-wrapper {
-  height: 440px;
   padding: 5rem 0;
   a {
     text-decoration: none;
@@ -42,6 +41,7 @@
       width: 100%;
       background-size: contain;
       background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }
@@ -53,4 +53,28 @@
   position: relative;
   bottom: 25%;
   z-index: 5;
+}
+
+@media (max-width: 850px) {
+  #recent-projects-wrapper {
+    ul {
+      li {
+        display: block;
+        width: 65%;
+        margin: 50px auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #recent-projects-wrapper {
+    ul {
+      li {
+        display: block;
+        width: 80%;
+        margin: 50px auto;
+      }
+    }
+  }
 }

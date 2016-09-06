@@ -1,9 +1,15 @@
 import React from 'react';
-import {Link} from 'react-router';
+import {Link, browserHistory} from 'react-router';
 
 import Nav from './Nav';
 
 export default React.createClass({
+  previousProject() {
+    browserHistory.push('/projects/To-Do');
+  },
+  nextProject() {
+    browserHistory.push('/projects/Bartenders-Choice');
+  },
   render() {
     return (
       <main>
@@ -36,8 +42,8 @@ export default React.createClass({
           </div>
         </section>
         <div className="arrows-to-project">
-        <Link to="/To-Do"><i className="fa fa-arrow-left" aria-hidden="true"></i></Link>
-        <Link to="/Bartenders-Choice"><i className="fa fa-arrow-right" aria-hidden="true"></i></Link>
+        <i className="fa fa-arrow-left" aria-hidden="true" onClick={this.previousProject}></i>
+        <i className="fa fa-arrow-right" aria-hidden="true" onClick={this.nextProject}></i>
         </div>
       </main>
     );

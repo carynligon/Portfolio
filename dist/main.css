@@ -18,7 +18,7 @@ nav {
 
 h1 {
   margin: 0;
-  padding: 150px;
+  padding: 150px 0;
   text-align: center;
   background: #ffbe00;
   color: #fff;
@@ -27,10 +27,12 @@ h1 {
 header {
   margin-top: 80px; }
 
+@media (max-width: 600px) {
+  nav {
+    text-align: center; } }
 #about-wrapper {
   width: 100%;
   padding-top: 50px;
-  height: 810px;
   background: #6590b1; }
   #about-wrapper h2 {
     color: #413e3e;
@@ -49,7 +51,8 @@ header {
   #about-wrapper #about-paragraph-wrapper {
     background: #fff;
     color: #413e3e;
-    width: 64%;
+    width: 70%;
+    max-width: 580px;
     margin: 0 auto;
     padding: 70px 5% 15px 5%;
     box-sizing: border-box;
@@ -57,8 +60,15 @@ header {
     bottom: 80px;
     z-index: 1; }
 
+@media (max-width: 650px) {
+  #about-wrapper #about-paragraph-wrapper {
+    width: 85%; }
+  #about-wrapper #image {
+    width: 250px;
+    height: 250px; }
+  #about-wrapper h2 {
+    font-size: 2rem; } }
 #recent-projects-wrapper {
-  height: 440px;
   padding: 5rem 0; }
   #recent-projects-wrapper a {
     text-decoration: none; }
@@ -95,7 +105,8 @@ header {
       height: 70%;
       width: 100%;
       background-size: contain;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      background-position: center; }
 
 #project-preview-wrapper {
   height: 300px;
@@ -105,6 +116,16 @@ header {
   bottom: 25%;
   z-index: 5; }
 
+@media (max-width: 850px) {
+  #recent-projects-wrapper ul li {
+    display: block;
+    width: 65%;
+    margin: 50px auto; } }
+@media (max-width: 600px) {
+  #recent-projects-wrapper ul li {
+    display: block;
+    width: 80%;
+    margin: 50px auto; } }
 #featured-project-section a {
   text-decoration: none; }
 #featured-project-section #featured-project {
@@ -211,9 +232,21 @@ header {
       #contact-section .contact-form textarea:hover, #contact-section .contact-form textarea:focus {
         outline: none; }
 
+@media (max-width: 600px) {
+  #contact-section .contact-form {
+    width: 100%; }
+    #contact-section .contact-form input {
+      width: 90%; }
+    #contact-section .contact-form textarea {
+      width: 90%; }
+    #contact-section .contact-form label {
+      margin-left: 6%;
+      width: 90%; }
+    #contact-section .contact-form input[type=submit] {
+      margin: 15px 5px 15px 73%; } }
 .project-section {
   width: 80%;
-  margin: 10% auto; }
+  margin: 15% auto; }
   .project-section #view-all {
     text-decoration: none;
     color: #6590b1;
@@ -336,17 +369,80 @@ header {
 .arrows-to-project {
   width: 100%;
   position: fixed;
-  bottom: 0; }
-  .arrows-to-project a {
+  bottom: 10px; }
+  .arrows-to-project i {
     font-size: 1.2rem;
     color: #413e3e; }
-  .arrows-to-project a:first-child {
+  .arrows-to-project i:first-child {
     float: left;
     padding: 0 0 10px 10px; }
-  .arrows-to-project a:last-child {
+  .arrows-to-project i:last-child {
     float: right;
     padding: 0 10px 10px 0; }
 
+@media (max-width: 600px) {
+  .project-section {
+    margin: 25% auto; }
+    .project-section .process-section img {
+      width: 100%;
+      margin: 0 auto; }
+    .project-section .process-section .process-text {
+      width: 100%;
+      float: none; }
+    .project-section .process-text-2 {
+      width: 100%;
+      border-top: 1px solid #f4efef;
+      padding-top: 20px; }
+    .project-section .secondary-process-image {
+      width: 50%;
+      display: block;
+      margin: 10px auto; }
+    .project-section .secondary-images-p4 {
+      height: auto;
+      border-top: 1px solid #f4efef;
+      padding-top: 50px; }
+      .project-section .secondary-images-p4 img:first-child {
+        display: block;
+        width: 80%;
+        margin: 10px auto; }
+      .project-section .secondary-images-p4 img:last-child {
+        width: 100%;
+        display: block;
+        margin: 10px auto; }
+    .project-section .secondary-images-p5 {
+      height: 200px;
+      border-top: 1px solid #f4efef;
+      padding-top: 50px; }
+      .project-section .secondary-images-p5 img {
+        width: 100%; }
+    .project-section .process-text-2-p3 {
+      width: 100%;
+      border-top: 1px solid #f4efef;
+      padding-top: 20px; }
+    .project-section .secondary-images-p3 {
+      height: auto;
+      border-top: 1px solid #f4efef;
+      padding-top: 50px; }
+      .project-section .secondary-images-p3 img:first-child, .project-section .secondary-images-p3 img:nth-child(2), .project-section .secondary-images-p3 img:last-child {
+        width: 100%;
+        display: block;
+        margin: 10px auto; }
+    .project-section .secondary-images-p2 {
+      height: auto;
+      border-top: 1px solid #f4efef;
+      padding-top: 50px; }
+      .project-section .secondary-images-p2 img:first-child, .project-section .secondary-images-p2 img:last-child {
+        width: 100%;
+        display: block;
+        margin: 10px auto; }
+    .project-section .secondary-images {
+      height: auto;
+      border-top: 1px solid #f4efef;
+      padding-top: 50px; }
+      .project-section .secondary-images img:first-child, .project-section .secondary-images img:nth-child(2), .project-section .secondary-images img:last-child {
+        display: block;
+        width: 100%;
+        margin: 10px auto; } }
 #project-list {
   padding: 0;
   width: 60%;

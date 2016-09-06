@@ -84,3 +84,24 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  #contact-section {
+    .contact-form {
+      width: 100%;
+      input {
+        width: 90%;
+      }
+      textarea {
+        width: 90%;
+      }
+      label {
+        margin-left: 6%;
+        width: 90%;
+      }
+      input[type=submit] {
+        margin: 15px 5px 15px 73%;
+      }
+    }
+  }
+}
