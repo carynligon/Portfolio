@@ -49,7 +49,8 @@ export default React.createClass({
       messageLabel = activeStyle;
     }
     return (
-      <section id="contact-section">
+      <a id="contact-section">
+      <section id="contact-section" name="contact-section">
         <form className="contact-form" action="mailto:hello@carynligon.com" method="post" encType="text/plain">
           <h2>Let's talk!</h2>
           <label htmlFor="name" style={nameLabel}>Name</label>
@@ -62,6 +63,7 @@ export default React.createClass({
           <input type="submit" value="Send"/>
         </form>
       </section>
+      </a>
     );
   }
 });

@@ -1,6 +1,15 @@
 .project-section {
   width: 80%;
   margin: 10% auto;
+  #view-all {
+    text-decoration: none;
+    color: $secondary;
+    margin-bottom: 5%;
+    display: block;
+    &:hover {
+      color: $main;
+    }
+  }
   .intro {
     h2 {
       display: inline-block;
@@ -23,12 +32,12 @@
   .process-section {
     margin: 50px 0;
     .process-text {
-      width: 60%;
+      width: 44%;
       float: left;
     }
     img {
-      width: 40%;
-      margin-top: 30px;
+      width: 50%;
+      margin: 35px 0 0 6%;
     }
     &::after {
       content: '';
@@ -58,5 +67,110 @@
       width: calc(23% - 10px);
       height: 100%;
     }
+  }
+  .secondary-images-p2 {
+    height: 320px;
+    margin-bottom: 50px;
+    img {
+      object-fit: contain;
+      border-top: 2px solid $gray;
+      margin: 5px;
+      box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+    }
+    img:first-child {
+      display: inline-block;
+      width: calc(55% - 10px);
+      height: 100%;
+    }
+    img:last-child {
+      width: calc(45% - 10px);
+      height: 100%;
+    }
+  }
+  .secondary-images-p3 {
+    height: 320px;
+    margin-bottom: 50px;
+    img {
+      object-fit: contain;
+      border-top: 2px solid $gray;
+      margin: 5px;
+      box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+    }
+    img:first-child {
+      display: inline-block;
+      width: calc(27% - 10px);
+      height: 100%;
+    }
+    img:nth-child(2) {
+      display: inline-block;
+      width: calc(32% - 10px);
+      height: 100%;
+    }
+    img:last-child {
+      width: calc(41% - 10px);
+      height: 100%;
+    }
+  }
+  .secondary-images-p4 {
+    height: 320px;
+    margin-bottom: 50px;
+    img {
+      object-fit: contain;
+      border-top: 2px solid $gray;
+      margin: 5px;
+      box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+    }
+    img:first-child {
+      display: inline-block;
+      width: calc(35% - 10px);
+      height: 100%;
+    }
+    img:last-child {
+      width: calc(65% - 10px);
+      height: 100%;
+    }
+  }
+  .secondary-images-p5 {
+    height: 320px;
+    margin-bottom: 50px;
+    img {
+      object-fit: contain;
+      width: 60%;
+      display: block;
+      border-top: 2px solid $gray;
+      margin: 0 auto;
+      box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+    }
+  }
+  .process-text-2 {
+    width: 60%;
+    float: right;
+  }
+  .process-text-2-p3 {
+    margin: 0 auto;
+    float: none;
+    width: 75%;
+  }
+  .secondary-process-image {
+    width: 30%;
+    margin: 70px 0 0 5%;
+  }
+}
+
+.arrows-to-project {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  a {
+    font-size: 1.2rem;
+    color: $black;
+  }
+  a:first-child {
+    float: left;
+    padding: 0 0 10px 10px;
+  }
+  a:last-child {
+    float: right;
+    padding: 0 10px 10px 0;
   }
 }

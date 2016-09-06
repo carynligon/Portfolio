@@ -1,0 +1,36 @@
+#project-list {
+  padding: 0;
+  width: 60%;
+  max-width: 1000px;
+  margin: 10% auto;
+  li {
+    list-style-type: none;
+    margin: 20px 0;
+    border-bottom: 1px solid $gray;
+    box-sizing: border-box;
+    padding: 15px 0;
+    &:last-child {
+      border: none;
+    }
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+    img {
+      width: 70%;
+      max-width: 475px;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+    h4 {
+      text-align: center;
+    }
+    p {
+      width: 60%;
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}

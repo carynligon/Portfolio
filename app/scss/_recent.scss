@@ -1,6 +1,9 @@
 #recent-projects-wrapper {
   height: 440px;
   padding: 5rem 0;
+  a {
+    text-decoration: none;
+  }
   h2 {
     text-align: center;
     color: $black;

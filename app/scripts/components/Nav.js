@@ -7,7 +7,7 @@ export default React.createClass({
       <nav>
         <Link to="/">Home</Link>
         <Link to="/projects">Projects</Link>
-        <Link to="/">Contact</Link>
+        <a href="#contact-section">Contact</a>
       </nav>
     );
   }
