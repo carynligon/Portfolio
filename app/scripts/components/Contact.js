@@ -83,6 +83,12 @@ export default React.createClass({
       <a id="contact-section">
       <section id="contact-section" name="contact-section">
         {content}
+        <div className="contact-links">
+          <a href="https://github.com/carynligon" target='_blank'><i className="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/caryn-ligon-01731444" target='_blank'><i className="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/CarynLigon" target='_blank'><i className="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://medium.com/@CarynLigon" target='_blank'><i className="fa fa-medium" aria-hidden="true"></i></a>
+        </div>
       </section>
       </a>
     );

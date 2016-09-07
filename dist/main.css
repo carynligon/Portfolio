@@ -166,13 +166,25 @@ header {
       margin: 0; }
 
 #contact-section {
-  padding: 70px 0; }
+  padding: 70px 0 10px 0; }
   #contact-section .message-sent p {
     text-align: center;
     font-size: 1.3rem;
     width: 350px;
     margin: 0 auto;
     padding: 200px 0; }
+  #contact-section .contact-links {
+    width: 450px;
+    margin: 0 auto;
+    text-align: center; }
+    #contact-section .contact-links a {
+      color: #413e3e;
+      font-size: 2.5rem;
+      margin: 0 20px;
+      transition: transform 0.3s; }
+      #contact-section .contact-links a:hover {
+        transform: scale(1.1);
+        border-bottom: 5px solid #ffbe00; }
   #contact-section .contact-form {
     width: 500px;
     margin: 0 auto;

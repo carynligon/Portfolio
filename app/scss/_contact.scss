@@ -1,5 +1,5 @@
 #contact-section {
-  padding: 70px 0;
+  padding: 70px 0 10px 0;
   .message-sent {
     p {
       text-align: center;
@@ -7,6 +7,21 @@
       width: 350px;
       margin: 0 auto;
       padding: 200px 0;
+    }
+  }
+  .contact-links {
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    a {
+      color: $black;
+      font-size: 2.5rem;
+      margin: 0 20px;
+      transition: transform 0.3s;
+      &:hover {
+        transform: scale(1.1);
+        border-bottom: 5px solid $main;
+      }
     }
   }
   .contact-form {
