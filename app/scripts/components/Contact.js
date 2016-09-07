@@ -6,7 +6,8 @@ export default React.createClass({
     return {
       name: false,
       email: false,
-      message: false
+      message: false,
+      messageSent: false
     }
   },
   showName(e) {
@@ -39,16 +40,15 @@ export default React.createClass({
         myEmail: 'hello@carynligon.com',
         senderEmail: this.refs.email.value,
         message: this.refs.message.value
-      },
-      success: (data) => {
-        console.log(data);
       }
     });
+    this.setState({messageSent: true});
   },
   render() {
     let nameLabel;
     let emailLabel;
     let messageLabel;
+    let content;
     let activeStyle = {
       visibility: 'visible',
       top: '0',
@@ -64,20 +64,25 @@ export default React.createClass({
     if (this.state.message) {
       messageLabel = activeStyle;
     }
+    if (this.state.messageSent) {
+      content = <div className="message-sent"><p>Thank you! I'll be in touch as soon as possible!</p></div>
+    } else {
+      content = <form className="contact-form" onSubmit={this.sendEmail}>
+        <h2>Let's talk!</h2>
+        <label htmlFor="name" style={nameLabel}>Name</label>
+        <input type="text" name="name" id="name" onKeyUp={this.showName} placeholder="Name" ref="name" required/>
+        <label htmlFor="email" style={emailLabel}>Email</label>
+        <input type="email" name="email" id="email" onKeyUp={this.showEmail} placeholder="Email" ref="email" required/>
+        <label htmlFor="message" style={messageLabel}>Message</label>
+        <textarea name="message" id="message" onKeyUp={this.showMessage} placeholder="Message" ref="message" required/>
+
+        <input type="submit" value="Send"/>
+      </form>
+    }
     return (
       <a id="contact-section">
       <section id="contact-section" name="contact-section">
-        <form className="contact-form" onSubmit={this.sendEmail}>
-          <h2>Let's talk!</h2>
-          <label htmlFor="name" style={nameLabel}>Name</label>
-          <input type="text" name="name" id="name" onKeyUp={this.showName} placeholder="Name" ref="name" required/>
-          <label htmlFor="email" style={emailLabel}>Email</label>
-          <input type="email" name="email" id="email" onKeyUp={this.showEmail} placeholder="Email" ref="email" required/>
-          <label htmlFor="message" style={messageLabel}>Message</label>
-          <textarea name="message" id="message" onKeyUp={this.showMessage} placeholder="Message" ref="message" required/>
-
-          <input type="submit" value="Send"/>
-        </form>
+        {content}
       </section>
       </a>
     );

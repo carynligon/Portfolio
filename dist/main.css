@@ -167,6 +167,12 @@ header {
 
 #contact-section {
   padding: 70px 0; }
+  #contact-section .message-sent p {
+    text-align: center;
+    font-size: 1.3rem;
+    width: 350px;
+    margin: 0 auto;
+    padding: 200px 0; }
   #contact-section .contact-form {
     width: 500px;
     margin: 0 auto;
