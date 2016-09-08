@@ -501,6 +501,8 @@ header {
     border: 1px solid #f4efef;
     box-sizing: border-box;
     padding: 15px 0; }
+    #project-list li:hover {
+      border-bottom: 5px solid #ffbe00; }
     #project-list li a {
       text-decoration: none;
       color: #413e3e; }

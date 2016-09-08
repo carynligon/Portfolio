@@ -8,7 +8,7 @@ export default React.createClass({
         <a href="/#home">Home</a>
         <Link to="/projects">Projects</Link>
         <a href="/#contact-section">Contact</a>
-        <a href="https://www.dropbox.com/s/mb603a94kkkrbc6/CLigon-Resume-BW.pdf?dl=0" target='_blank'>Resume</a>
+        <a href="https://www.dropbox.com/s/kgticz2fznqqf30/CLigon-Resume-Color.pdf?dl=0" target='_blank'>Resume</a>
       </nav>
     );
   }
