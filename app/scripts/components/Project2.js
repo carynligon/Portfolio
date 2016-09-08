@@ -28,7 +28,7 @@ export default React.createClass({
             <h3>The Process</h3>
             <div className="process-text">
               <p className="project-process-paragraph">I had worked with a couple different API's by the time I started building this app. I was definitely still a beginner, but I was starting to get the hang of it. Using the <a href="https://developer.spotify.com/web-api/" target='_blank'>Spotify API</a> for this app was great. Their docs are really easy to understand. I was getting the data I needed in a matter of minutes using <a href="https://www.getpostman.com/" target='_blank'>Postman</a>.</p>
-              <p className="project-process-paragraph">I used Backbone for all of my data collections and models. I then used a custom function on my collection to fetch data from the Spotify API based on a query parameter that I got from an input element where users could search for artists' names. I decided to go with this structure so that everytime a search was performed, I had a collection of curated artist models based on what the user had searched.</p>
+              <p className="project-process-paragraph">I used Backbone for all of my data collections and models. I then used a custom function on my collection to fetch data from the Spotify API based on a query parameter that I got from an input element where users could search for artists' names. I did unit testing for the first time on this app using Mocha and Chai. I tested any custom function I wrote for my collections and models. You can see a snippet of some tests in the next photo.</p>
             </div>
             <img src="/assets/images/BTB/TestEx.png" alt="photo of testing code sample"/>
           </div>

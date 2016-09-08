@@ -19,7 +19,7 @@ export default React.createClass({
           <div className="intro">
             <h2>Confirm App</h2>
             <a href="https://carynligon.github.io/Confirm" target='_blank'>View Live</a>
-            <p className="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p className="project-description">This app allows you to see documents that you need to read. As soon as you mark a document as read, you will be asked to confirm that you did actually read the document.</p>
           </div>
           <div className="project-images">
             <img src="/assets/images/Confirm/ReadModal.png"/>
@@ -33,8 +33,8 @@ export default React.createClass({
             <img src="/assets/images/Confirm/Confirmation.png" alt="photo of confirmation of reading document of app"/>
           </div>
           <div className="process-text-2-p3">
-            <p className="project-process-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p className="project-process-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p className="project-process-paragraph">This app is very simple. The purpose of builiding it was to practice using modals and checkboxes in React. For this app, I based the state of the React component on whether or not the checkbox was checked. If the user checked a document and confirmed that they had read it, I would make a PUT request to the server to change the document from unread (the default) to read.</p>
+            <p className="project-process-paragraph">I had never worked with modals before this app. By making the modal two parts - a container and the actual content, I was able to achieve a layered look, where the modal was on top of the original content. I wasn't sure how to get the modal close without an actual close button. I'd like to go back and make the modal more accessible by allowing more than one method to close it (i.e. hitting escape, clicking away, etc.).</p>
           </div>
         </section>
         <div className="arrows-to-project">

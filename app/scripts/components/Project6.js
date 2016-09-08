@@ -19,7 +19,7 @@ export default React.createClass({
           <div className="intro">
             <h2>Photo Albums</h2>
             <a href="https://carynligon.github.io/PhotoAlbums/" target='_blank'>View Live</a>
-            <p className="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p className="project-description">This is an app that consists of different photo albums. You can view the pictures in each album as a grid or individually.</p>
           </div>
           <div className="project-images">
             <img src="/assets/images/Photo-Albums.png"/>
@@ -27,8 +27,8 @@ export default React.createClass({
           <div className="process-section">
             <h3>The Process</h3>
             <div className="process-text">
-              <p className="project-process-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p className="project-process-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p className="project-process-paragraph">This was my first project using JQuery and 14 days into the Iron Yard. This app was pretty fun to build. It was one of the first projects where I felt like I had actually built sometime somewhat substantial. It was also a ton of fun just getting to personalize it as much as I wanted. I started out drawing some very simple wireframes which you can see in the next photo.</p>
+              <p className="project-process-paragraph">I struggled the most with rendering content based on the location. This concept was very new to me and I got stuck a few times going from one album to another. This is another app that would be fun to go back and refactor with user accounts and more smooth actions and animations.</p>
             </div>
             <img src="/assets/images/Albums/Planning.JPG" alt="photo of wireframes"/>
           </div>
@@ -37,8 +37,7 @@ export default React.createClass({
             <img src="/assets/images/Albums/SingleImage.png" alt="photo of single image in app"/>
           </div>
           <div className="process-text-2-p3">
-            <p className="project-process-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p className="project-process-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p className="project-process-paragraph">The styling is rather cut and dry in this app, which was intentional. I wanted the focal point to be the actual images and albums, so I chose to stick with white and simple borders. Although the app is simple, I wanted it to look clean and polished. I'm really happy with how it turned out looking and working. I was pretty happy with the end result, especially with only having about a weeks worth of learning JavaScript and JQuery beforehand.</p>
           </div>
         </section>
         <div className="arrows-to-project">
