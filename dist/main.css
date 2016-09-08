@@ -181,7 +181,7 @@ header {
     margin: 0 auto;
     padding: 200px 0; }
   #contact-section .contact-links {
-    width: 450px;
+    width: 100%;
     margin: 0 auto;
     text-align: center; }
     #contact-section .contact-links a {
