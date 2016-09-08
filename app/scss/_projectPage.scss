@@ -11,9 +11,15 @@
     }
   }
   .intro {
+    padding-bottom: 30px;
     h2 {
       display: inline-block;
-      width: 91%;
+    }
+    p {
+      width: 75%;
+    }
+    a {
+      float: right;
     }
   }
   .project-images {
@@ -31,12 +37,17 @@
   }
   .process-section {
     margin: 50px 0;
+    text-align: center;
     .process-text {
       width: 44%;
       float: left;
+      p {
+        text-align: left;
+      }
     }
     img {
       width: 50%;
+      max-width: 400px;
       margin: 35px 0 0 6%;
     }
     &::after {
@@ -131,7 +142,7 @@
     }
   }
   .secondary-images-p5 {
-    height: 320px;
+    height: auto;
     margin-bottom: 50px;
     img {
       object-fit: contain;
@@ -164,6 +175,11 @@
   i {
     font-size: 1.2rem;
     color: $black;
+    transition: transform 0.3s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
   }
   i:first-child {
     float: left;
@@ -175,7 +191,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .project-section {
     margin: 25% auto;
     .process-section {
@@ -216,7 +232,7 @@
       }
     }
     .secondary-images-p5 {
-      height: 200px;
+      height: auto;
       border-top: 1px solid $gray;
       padding-top: 50px;
       img {

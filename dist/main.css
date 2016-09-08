@@ -272,9 +272,14 @@ header {
     display: block; }
     .project-section #view-all:hover {
       color: #ffbe00; }
-  .project-section .intro h2 {
-    display: inline-block;
-    width: 91%; }
+  .project-section .intro {
+    padding-bottom: 30px; }
+    .project-section .intro h2 {
+      display: inline-block; }
+    .project-section .intro p {
+      width: 75%; }
+    .project-section .intro a {
+      float: right; }
   .project-section .project-images img {
     object-fit: contain;
     border-top: 2px solid #f4efef;
@@ -285,12 +290,16 @@ header {
     display: block;
     height: 30%; }
   .project-section .process-section {
-    margin: 50px 0; }
+    margin: 50px 0;
+    text-align: center; }
     .project-section .process-section .process-text {
       width: 44%;
       float: left; }
+      .project-section .process-section .process-text p {
+        text-align: left; }
     .project-section .process-section img {
       width: 50%;
+      max-width: 400px;
       margin: 35px 0 0 6%; }
     .project-section .process-section::after {
       content: '';
@@ -364,7 +373,7 @@ header {
       width: calc(65% - 10px);
       height: 100%; }
   .project-section .secondary-images-p5 {
-    height: 320px;
+    height: auto;
     margin-bottom: 50px; }
     .project-section .secondary-images-p5 img {
       object-fit: contain;
@@ -390,7 +399,11 @@ header {
   bottom: 10px; }
   .arrows-to-project i {
     font-size: 1.2rem;
-    color: #413e3e; }
+    color: #413e3e;
+    transition: transform 0.3s; }
+    .arrows-to-project i:hover {
+      cursor: pointer;
+      transform: scale(1.1); }
   .arrows-to-project i:first-child {
     float: left;
     padding: 0 0 10px 10px; }
@@ -398,7 +411,7 @@ header {
     float: right;
     padding: 0 10px 10px 0; }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .project-section {
     margin: 25% auto; }
     .project-section .process-section img {
@@ -428,7 +441,7 @@ header {
         display: block;
         margin: 10px auto; }
     .project-section .secondary-images-p5 {
-      height: 200px;
+      height: auto;
       border-top: 1px solid #f4efef;
       padding-top: 50px; }
       .project-section .secondary-images-p5 img {
