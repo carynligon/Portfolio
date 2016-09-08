@@ -165,6 +165,13 @@ header {
     #featured-project-section #featured-project p:last-child {
       margin: 0; }
 
+@media (min-width: 950px) {
+  #featured-project-section #featured-project {
+    height: 500px; }
+    #featured-project-section #featured-project::before {
+      height: 500px; }
+    #featured-project-section #featured-project h3 {
+      padding-top: 12rem; } }
 #contact-section {
   padding: 70px 0 10px 0; }
   #contact-section .message-sent p {

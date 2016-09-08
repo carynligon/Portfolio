@@ -45,3 +45,17 @@
     }
   }
 }
+
+@media (min-width: 950px) {
+  #featured-project-section {
+    #featured-project {
+      height: 500px;
+      &::before {
+        height: 500px;
+      }
+      h3 {
+        padding-top: 12rem;
+      }
+    }
+  }
+}
