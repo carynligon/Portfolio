@@ -18,7 +18,7 @@ export default React.createClass({
           <Link id="view-all" to="/projects">All Projects</Link>
           <div className="intro">
             <h2>Reactpardy</h2>
-            <a href="https://ethereal-burn.surge.sh/" target='_blank'>View Live</a>
+            <a href="http://colossal-effect.surge.sh/" target='_blank'>View Live</a>
             <p className="project-description">This is a Jeopardy-style app built using React.</p>
           </div>
           <div className="project-images">
