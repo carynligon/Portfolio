@@ -242,14 +242,14 @@ header {
     #contact-section .contact-form input:-ms-input-placeholder, #contact-section .contact-form textarea:-ms-input-placeholder {
       color: #413e3e; }
     #contact-section .contact-form button {
-      display: inline-block;
+      display: block;
       border: none;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
       width: 20%;
       background: #ffbe00;
       color: #fff;
       padding: 8px 0;
-      margin: 15px 5px 15px 75%;
+      margin: 1rem auto 0 auto;
       transition: transform 0.2s; }
       #contact-section .contact-form button:hover, #contact-section .contact-form button:focus {
         transform: scale(1.05);
