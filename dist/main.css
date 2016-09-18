@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700);
 nav {
-  padding: 30px 20px;
+  padding: 30px 0;
   position: fixed;
   z-index: 20;
   top: 0;
@@ -9,7 +9,7 @@ nav {
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1); }
   nav a {
     text-decoration: none;
-    margin-right: 20px;
+    margin: 20px;
     padding-bottom: 3px;
     color: #413e3e; }
     nav a:hover {
@@ -164,7 +164,10 @@ header {
     z-index: 5;
     margin-bottom: 0; }
     #featured-project-section #featured-project p:last-child {
-      margin: 0; }
+      margin: 0;
+      text-decoration: underline; }
+      #featured-project-section #featured-project p:last-child:hover {
+        color: #413e3e; }
 
 @media (min-width: 950px) {
   #featured-project-section #featured-project {
@@ -172,7 +175,10 @@ header {
     #featured-project-section #featured-project::before {
       height: 500px; }
     #featured-project-section #featured-project h3 {
-      padding-top: 12rem; } }
+      padding-top: 12rem; }
+    #featured-project-section #featured-project p {
+      width: 85%;
+      margin: 0 auto; } }
 #contact-section {
   padding: 70px 0 10px 0; }
   #contact-section p {
@@ -235,16 +241,17 @@ header {
       color: #413e3e; }
     #contact-section .contact-form input:-ms-input-placeholder, #contact-section .contact-form textarea:-ms-input-placeholder {
       color: #413e3e; }
-    #contact-section .contact-form input[type=submit] {
+    #contact-section .contact-form button {
       display: inline-block;
       border: none;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
       width: 20%;
       background: #ffbe00;
       color: #fff;
-      margin: 15px 5px 15px 57%;
+      padding: 8px 0;
+      margin: 15px 5px 15px 75%;
       transition: transform 0.2s; }
-      #contact-section .contact-form input[type=submit]:hover, #contact-section .contact-form input[type=submit]:focus {
+      #contact-section .contact-form button:hover, #contact-section .contact-form button:focus {
         transform: scale(1.05);
         cursor: pointer; }
     #contact-section .contact-form textarea {
@@ -492,7 +499,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1000px;
-  margin: 10% auto; }
+  margin: 6rem auto; }
   #project-list li {
     list-style-type: none;
     margin: 20px 15px;

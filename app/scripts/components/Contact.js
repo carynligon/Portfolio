@@ -76,7 +76,7 @@ export default React.createClass({
         <label htmlFor="message" style={messageLabel}>Message</label>
         <textarea name="message" id="message" onKeyUp={this.showMessage} placeholder="Message" ref="message" required/>
 
-        <input type="submit" value="Send"/>
+        <button type="submit">Send</button>
       </form>
     }
     return (

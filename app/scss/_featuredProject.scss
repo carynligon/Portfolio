@@ -41,6 +41,10 @@
       margin-bottom: 0;
       &:last-child {
         margin: 0;
+        text-decoration: underline;
+        &:hover {
+          color: $black;
+        }
       }
     }
   }
@@ -55,6 +59,10 @@
       }
       h3 {
         padding-top: 12rem;
+      }
+      p {
+        width: 85%;
+        margin: 0 auto;
       }
     }
   }
