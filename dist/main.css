@@ -164,7 +164,7 @@ header {
     z-index: 5;
     margin-bottom: 0; }
     #featured-project-section #featured-project p:last-child {
-      margin: 0;
+      margin: 0 auto;
       text-decoration: underline; }
       #featured-project-section #featured-project p:last-child:hover {
         color: #413e3e; }
