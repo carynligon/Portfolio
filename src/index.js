@@ -26,12 +26,14 @@ class App extends Component {
             </g>
         </svg>
         </h1>
+        <p>Currently: Front end Developer at <a className="squiggle" href="https://thezebra.com" target="_blank">The Zebra</a></p>
         <ul>
-          <a className="squiggle" href="https://github.com/carynligon"><li>Github</li></a>
-          <a className="squiggle" href="https://medium.com/@CarynLigon"><li>Blog</li></a>
-          <a className="squiggle" href="https://codepen.io/carynligon"><li>Codepen</li></a>
-          <a className="squiggle" href="https://twitter.com/CarynLigon"><li>Twitter</li></a>
+          <a className="squiggle" href="https://github.com/carynligon" target="_blank"><li>Github</li></a>
+          <a className="squiggle" href="https://medium.com/@CarynLigon" target="_blank"><li>Blog</li></a>
+          <a className="squiggle" href="https://codepen.io/carynligon" target="_blank"><li>Codepen</li></a>
+          <a className="squiggle" href="https://twitter.com/CarynLigon" target="_blank"><li>Twitter</li></a>
         </ul>
+        <p>Say hey: <strong>hello@carynligon.com</strong></p>
       </div>
     )
   }

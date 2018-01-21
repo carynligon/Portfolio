@@ -1032,11 +1032,21 @@ var App = function (_Component) {
           )
         ),
         _react2.default.createElement(
+          'p',
+          null,
+          'Currently: Front end Developer at ',
+          _react2.default.createElement(
+            'a',
+            { className: 'squiggle', href: 'https://thezebra.com', target: '_blank' },
+            'The Zebra'
+          )
+        ),
+        _react2.default.createElement(
           'ul',
           null,
           _react2.default.createElement(
             'a',
-            { className: 'squiggle', href: 'https://github.com/carynligon' },
+            { className: 'squiggle', href: 'https://github.com/carynligon', target: '_blank' },
             _react2.default.createElement(
               'li',
               null,
@@ -1045,7 +1055,7 @@ var App = function (_Component) {
           ),
           _react2.default.createElement(
             'a',
-            { className: 'squiggle', href: 'https://medium.com/@CarynLigon' },
+            { className: 'squiggle', href: 'https://medium.com/@CarynLigon', target: '_blank' },
             _react2.default.createElement(
               'li',
               null,
@@ -1054,7 +1064,7 @@ var App = function (_Component) {
           ),
           _react2.default.createElement(
             'a',
-            { className: 'squiggle', href: 'https://codepen.io/carynligon' },
+            { className: 'squiggle', href: 'https://codepen.io/carynligon', target: '_blank' },
             _react2.default.createElement(
               'li',
               null,
@@ -1063,12 +1073,22 @@ var App = function (_Component) {
           ),
           _react2.default.createElement(
             'a',
-            { className: 'squiggle', href: 'https://twitter.com/CarynLigon' },
+            { className: 'squiggle', href: 'https://twitter.com/CarynLigon', target: '_blank' },
             _react2.default.createElement(
               'li',
               null,
               'Twitter'
             )
+          )
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Say hey: ',
+          _react2.default.createElement(
+            'strong',
+            null,
+            'hello@carynligon.com'
           )
         )
       );
