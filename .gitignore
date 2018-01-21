@@ -1,6 +1,0 @@
-client/settings.js
-node_modules/
-
-$(document).ajaxSend(function(evt, xhrAjax, jqueryAjax) {
-    xhrAjax.setRequestHeader('Authorization', 'Basic ' + authorization);
-});
